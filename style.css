@@ -1369,7 +1369,7 @@ fieldset[disabled] .button.is-info.is-inverted.is-outlined {
 }
 
 .button.is-info.is-light:hover, .button.is-info.is-light.is-hovered {
-  background-color: #e4eff9;
+  background-color: #eff5fb;
   border-color: transparent;
   color: #296fa8;
 }
@@ -1417,10 +1417,12 @@ fieldset[disabled] .button.is-success {
 .button.is-success.is-inverted {
   background-color: #fff;
   color: black;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .button.is-success.is-inverted:hover, .button.is-success.is-inverted.is-hovered {
-  background-color: #f2f2f2;
+  background-color: #3CBA22;
+  color: white;
 }
 
 .button.is-success.is-inverted[disabled],
@@ -1931,7 +1933,7 @@ fieldset[disabled] .button {
 
 .container {
   flex-grow: 1;
-  margin: 10px auto;
+  margin: auto;
   position: relative;
   width: auto;
   padding-right: 10px;
@@ -6447,12 +6449,13 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   .navbar > .container .navbar-brand,
   .container > .navbar .navbar-brand {
-    margin-left: -0.75rem;
+    /*margin-left: -0.75rem;*/
   }
   .navbar > .container .navbar-menu,
   .container > .navbar .navbar-menu {
-    margin-right: -0.75rem;
+    /*margin-right: -0.75rem;*/
   }
+  
   .navbar.is-fixed-bottom-desktop, .navbar.is-fixed-top-desktop {
     left: 0;
     position: fixed;
@@ -11870,3 +11873,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 /*# sourceMappingURL=bulma.css.map */
+
+#logo{
+  position: relative;
+  top: 5vh;
+  scale: 450%;
+}
