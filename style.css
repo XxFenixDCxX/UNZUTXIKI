@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Titulos';
+  src: url('./Fuentes/BebasNeue-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
@@ -467,11 +474,6 @@ table th {
   to {
     transform: rotate(359deg);
   }
-}
-
-/*AGREGADOS*/
-#logo {
-  margin-left: 12px;
 }
 
 /* Bulma Elements */
@@ -1417,12 +1419,14 @@ fieldset[disabled] .button.is-success {
 .button.is-success.is-inverted {
   background-color: #fff;
   color: black;
-  transition: background-color 0.5s, color 0.5s;
+  scale: 100%;
+  transition: background-color 0.4s, color 0.4s, scale 0.2s;
 }
 
 .button.is-success.is-inverted:hover, .button.is-success.is-inverted.is-hovered {
   background-color: #3CBA22;
   color: white;
+  scale: 110%;
 }
 
 .button.is-success.is-inverted[disabled],
@@ -1931,14 +1935,20 @@ fieldset[disabled] .button {
   }
 }
 
+.sticky{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
 .container {
   flex-grow: 1;
   margin: auto;
-  position: relative;
+  position: sticky;
   width: auto;
   padding-right: 10px;
   border-radius: 5px;
-  background-color: #573083;
 }
 
 .container.is-fluid {
@@ -3219,8 +3229,17 @@ a.tag:hover {
   margin-top: -1.25rem;
 }
 
+/* TODO OPACIDAD Y TAMAÑO */
+.title, .subtitle {
+  opacity: 90%;
+  scale: 150%;
+  line-height: 1.5em;
+}
+
 .title.principal {
+  font-family: Titulos;
   font-size: 5rem;
+  letter-spacing: 5px;
 }
 
 .title.is-1 {
@@ -3256,6 +3275,7 @@ a.tag:hover {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25;
+  letter-spacing: 5px;
 }
 
 .subtitle strong {
@@ -3276,6 +3296,7 @@ a.tag:hover {
 }
 
 .subtitle.is-3 {
+  font-family: Titulos;
   font-size: 2rem;
 }
 
@@ -5422,8 +5443,6 @@ button.dropdown-item.is-active {
 
 .navbar {
   background-color: white;
-  min-height: 3.25rem;
-  position: relative;
   z-index: 30;
 }
 
@@ -10951,7 +10970,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .hero .navbar {
-  background: none;
+  background-color: #573083;
+  box-shadow: 0px 0px 30px black;
 }
 
 .hero .tabs ul {
@@ -11521,6 +11541,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: white;
 }
 
+
 .hero.is-success .title {
   color: #fff;
 }
@@ -11837,7 +11858,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .hero-foot {
   flex-grow: 0;
   flex-shrink: 0;
-  
 }
 
 .hero-body {
@@ -11875,7 +11895,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 /*# sourceMappingURL=bulma.css.map */
 
 #logo{
-  position: relative;
-  top: 5vh;
+  position: absolute;
+  top: 50px;
+  z-index: 200;
   scale: 450%;
 }
