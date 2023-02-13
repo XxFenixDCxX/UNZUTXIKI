@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="./Imagenes/logo/LogoColoresDefinitivo.png">
 	<script src="https://kit.fontawesome.com/9ad3ec13bd.js" crossorigin="anonymous"></script>
 	<title>Unzutxiki Berri | Banco de alimentos</title>
 </head>
@@ -13,16 +14,11 @@
 	<section class="hero is-success is-fullheight">
 		<!-- Hero head: will stick at the top -->
 		<div class="hero-head">
-		  <header class="navbar">
-			<div class="container">
+		  <nav class="navbar sticky">
+			<div class="container navbar-item">
 			  <div class="navbar-brand">
-				<a class="navbar-item">
-				  <img src="./Imagenes/logo/LogoColoresDefinitivo.png" alt="Logo">
+				  <img id="logo" src="./Imagenes/logo/LogoColoresDefinitivo.png" alt="Logo">
 				</a>
-				<span class="navbar-burger" data-target="navbarMenuHeroC">
-				  <span></span>
-				  <span></span>
-				  <span></span>
 				</span>
 			  </div>
 			  <div id="navbarMenuHeroC" class="navbar-menu">
@@ -56,17 +52,17 @@
 						</a>
 					  </div>
 				  </div>
-				  <a class="navbar-item " href="./quienes-somos.html">
+				  <a class="navbar-item" href="./quienes-somos.html">
 					¿Quienes somos?
-				  </a>
-				  <a class="navbar-item is-active">
+			  		</a>
+				  <a class="navbar-item is-active" href="./Historia.html">
 					Historia
 				  </a>
 				  <a class="navbar-item" href="./Voluntarios.html">
 					Voluntarios
 				  </a>
 				  <span class="navbar-item">
-					<a class="button is-success is-inverted">
+					<a class="button is-success is-inverted" href="https://bamadrid.org/ayudanos/">
 					  <span class="icon">
 						<i class="fa-solid fa-euro-sign"></i>
 					  </span>
@@ -86,7 +82,7 @@
 					</p>
 				</div>
 			</div>
-		  </header>
+		</nav>
 		</div>
 	</section>
 </header>
@@ -96,7 +92,7 @@
 	<nav class="level">
 		<div class="level-item has-text-left">
 		  <p>
-            La Asociación Unzutxiki Berri, nació en el año 2014, con el objetivo de conseguir que los vecinos del barrio <br>
+            La Asociación de familias Unzutxiki Berri, nació en el año 2014, con el objetivo de conseguir que los vecinos del barrio <br>
             tuvieran cubiertas sus necesidades básicas además de fomentar la inclusión social de las personas,<br>
             la consecución de una sociedad igualitaria y justa, y la promoción del voluntariado. Cinco años después,<br>
             en 2019, se convirtió en una UAF (Unidad de Atención Familiar), del Banco de Alimentos de Navarra.<br>
