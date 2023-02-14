@@ -12494,7 +12494,7 @@ print {
 }
 
 .hero.is-primary {
-  background-color: #00d1b2;
+  background-color: #F8F8F8;
   color: #fff;
 }
 
@@ -12504,11 +12504,11 @@ print {
 }
 
 .hero.is-primary .title {
-  color: #fff;
+  color: black;
 }
 
 .hero.is-primary .subtitle {
-  color: rgba(255, 255, 255, 0.9);
+  color: black;
 }
 
 .hero.is-primary .subtitle a:not(.button),
@@ -13141,13 +13141,50 @@ print {
     padding: 18rem 6rem;
   }
 }
-
+/*
 .footer {
   background-color: #fafafa;
   padding: 1rem 1.5rem 1rem;
 }
+*/
 
 /*# sourceMappingURL=bulma.css.map */
+
+.column iframe {
+  width: 400px;
+  height: 300px;
+  border: 0;
+  border-radius: 20px;
+}
+
+footer section p {
+  color: black;
+}
+footer .media-content {
+  margin-top: 6vh;
+}
+.subtitle:not(:last-child) {
+  margin-bottom: 0.5px;
+}
+footer figure {
+  margin-top: 5vh;
+  margin-left: 20vh;
+}
+footer a {
+  text-decoration: none;
+  background-color: none;
+  border-radius: 5px;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s, background-color 0.5s;
+}
+footer a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-size: 100% 2px;
+}
 
 #logo {
   position: absolute;

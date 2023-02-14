@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="./Imagenes/LogoColoresDefinitivo.png">
+	<link rel="shortcut icon" href="./Imagenes/logo/LogoColoresDefinitivo.png">
 	<script src="https://kit.fontawesome.com/9ad3ec13bd.js" crossorigin="anonymous"></script>	
-	<title>Unzutxiki Berri | Asociación</title>
+	<title>Unzutxiki Berri | Banco de alimentos</title>
 </head>
 <body>
 <header>
@@ -21,7 +21,7 @@
 			  </div>
 			  <div id="navbarMenuHeroC" class="navbar-menu">
 				<div class="navbar-end">
-				  	<a class="navbar-item is-active " href="./index.html">
+				  	<a class="navbar-item" href="./index.html">
 					INICIO
 				  	</a>
 				 	 <a class="navbar-item" href="./quienes-somos.html">
@@ -57,7 +57,7 @@
 					  </div>
 				  </div>
 				  
-				  <a class="navbar-item" href="./voluntarios.html">
+				  <a class="navbar-item is-active" href="./voluntarios.html">
 					Voluntarios
 				  </a>
 				  <span class="navbar-item">
@@ -85,46 +85,86 @@
 			</div>
 	</section>
 </header>
-	<!--esto sera lo de los reciadros con lso datos del proyecto hay puestas fotos para señalizar como sera pero sera otra cosa-->
-	<div class="box">
-	<nav class="level">
-		<div class="level-item has-text-centered">
-		  <div>
-			<p class="heading">Tweets</p>
-			<p class="title">3,456</p>
-		  </div>
+<div class="box">
+	<section class="section">
+		<div class="container">
+		  <h1 class="title">Inscríbete como voluntario</h1>
+		  <form>
+			<div class="field is-horizontal">
+				<div class="field-label is-normal">
+				  <label class="label">From</label>
+				</div>
+				<div class="field-body">
+				  <div class="field">
+					<p class="control is-expanded has-icons-left">
+					  <input class="input" type="text" placeholder="Nombre">
+					  <span class="icon is-small is-left">
+						<i class="fas fa-user"></i>
+					  </span>
+					</p>
+				  </div>
+				  <div class="field">
+					<p class="control is-expanded has-icons-left has-icons-right">
+					  <input class="input is-success" type="email" placeholder="Email">
+					  <span class="icon is-small is-left">
+						<i class="fas fa-envelope"></i>
+					  </span>
+					  <span class="icon is-small is-right">
+						<i class="fas fa-check"></i>
+					  </span>
+					</p>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <div class="field is-horizontal">
+				<div class="field-label"></div>
+				<div class="field-body">
+				  <div class="field is-expanded">
+					<div class="field has-addons">
+					  <p class="control">
+						<a class="button is-static">
+						  +34
+						</a>
+					  </p>
+					  <p class="control is-expanded">
+						<input class="input" type="tel" placeholder="Introduce tu teléfono">
+					  </p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			<div class="field">
+			  <label class="label">Área de interés</label>
+			  <div class="control">
+				<div class="select">
+				  <select>
+					<option selected="true" disabled="disabled">Selecciona una opción</option>
+					<option>Alimentación</option>
+					<option>Reponer estantes</option>
+					<option>Otro</option>
+				  </select>
+				</div>
+			  </div>
+			</div>
+			<div class="field">
+			  <label class="label">Mensaje</label>
+			  <div class="control">
+				<textarea class="textarea" placeholder="Escribe un mensaje"></textarea>
+			  </div>
+			</div>
+			<div class="field is-grouped">
+			  <div class="control">
+				<button class="button is-link">Enviar</button>
+			  </div>
+			  <div class="control">
+				<button class="button is-text">Cancelar</button>
+			  </div>
+			</div>
+		  </form>
 		</div>
-		<div class="level-item has-text-centered">
-		  <div>
-			<p class="heading">Following</p>
-			<p class="title">123</p>
-		  </div>
-		</div>
-		<div class="level-item has-text-centered">
-		  <div>
-			<p class="heading">Followers</p>
-			<p class="title">456K</p>
-		  </div>
-		</div>
-		<div class="level-item has-text-centered">
-		  <div>
-			
-			<p class="heading">Likes</p>
-			<p class="title">7890</p>
-		  </div>
-		</div>
-	  </nav>
-	</div>
-    <section class="section is-medium">
-		<h1 class="title">Sobre nostros</h1>
-		<h2 class="subtitle">
-		  EL banco de alimentos Unzutxiki, es una asociacion de igual reparto a familias necesitadas sin animo de lucro,
-		  Es uno de los muy pocos donde esta situado por el area de la Av. Guipuzcoa,
-		</h2>
-	  </section>
-
-<!--footeer-->
-
+	  </section>	  
+</div>
 <footer class="footer">
 	<section class="hero is-small is-primary is-centered has-text-centered">
 		<div class="hero-body has-text-centered">
